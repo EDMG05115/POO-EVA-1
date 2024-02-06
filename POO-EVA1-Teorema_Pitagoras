@@ -1,0 +1,69 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.eva1.conversiones;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Edwin Morales
+ */
+public class EVA103Teorema_Pitagoras {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double a, b, c;
+        boolean salir = true;
+        System.out.println("Calculadora de fórmula general:");
+
+
+        
+        do {
+        System.out.println("Ingrese la variable que desea calcular a/b/c: ");
+        System.out.println("Escriba "salir" para finalizar el programa: ");
+        String valor = input.next();
+        switch(valor){
+            case "a":
+                System.out.println("Calculando a: ");
+                op1A = Math.pow(a) - Math.pow(c);
+                
+                libra = (kgrs / 0.45);
+                
+                System.out.println(kgrs + " kgrs a libras es: " + libra + " lb");
+            break;
+            case "b":
+                System.out.println("Pesos a dólares");
+                System.out.print("Ingresa el número de pesos: ");
+                pesos = input.nextDouble();
+                
+                dolares = (pesos * 0.059);
+                
+                System.out.println("$" + pesos + " a dolaes es: " + dolares + "$");
+            break;
+            case "c":
+                System.out.println("Metros a centímetros");
+                System.out.print("Ingresa tu altura en metros: ");
+                m = input.nextDouble();
+                
+                cm = (m * 100);
+                
+                System.out.println(m + " m  a centímetros es: " + cm + " cm");
+            break;
+            case "Salir":
+                salir = false;
+            break;
+            default:
+                System.out.println("Valor invalido");
+        } while (salir);
+        
+        System.out.println("Ingrese el valor de a (Ingrese "?" si es la incognita): ");
+        String a = input.next();
+        System.out.println("Ingrese el valor de b (Ingrese "?" si es la incognita): ");
+        String b = input.next();
+        System.out.println("Ingrese el valor de c (Ingrese "?" si es la incognita): ");
+        String c = input.next();
+
+    }
+}
